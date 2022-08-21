@@ -1,0 +1,55 @@
+.default {
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  color: hsl(257, 7%, 63%);
+  font-weight: 700;
+}
+
+.header-btn {
+  height: 2.2rem;
+  width: 6rem;
+  border-radius: 1rem;
+  background-color: #fff;
+}
+
+.green-bg-btn {
+  background-color: hsl(180, 66%, 49%);
+  color: #fff;
+}
+
+.green-bg-btn:hover {
+  background-color: rgb(42, 207, 207, 0.5);
+  color: #fff;
+}
+
+.section-btn {
+  height: 2.3rem;
+  width: 9rem;
+  border-radius: 2rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .header-btn {
+    background-color: hsl(257, 27%, 26%);
+    color: #fff;
+  }
+
+  .green-bg-btn {
+    background-color: hsl(180, 66%, 49%);
+    width: 95%;
+    color: #fff;
+  }
+
+  .green-bg-btn:hover {
+    background-color: rgb(42, 207, 207, 0.5);
+    color: #fff;
+  }
+
+  .section-btn {
+    height: 2.3rem;
+    font-size: 14px;
+    width: 9rem;
+    border-radius: 2rem;
+  }
+}

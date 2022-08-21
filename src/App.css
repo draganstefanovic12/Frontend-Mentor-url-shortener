@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+
+/* reset */
+* {
+  box-sizing: border-box;
+  font-family: var(--font-main);
+  --font-main: "Poppins", sans-serif;
+  --primary-color: hsl(180, 66%, 49%);
+  --dark-violet: hsl(257, 27%, 26%);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+p {
+  color: hsl(257, 7%, 63%);
+}
+
+h1,
+h2 {
+  color: hsl(255, 11%, 22%);
+}
+
+.wrapper-white-bg,
+.wrapper-grey-bg {
+  background-color: #fff;
+  padding: 2rem 20rem;
+}
+
+.wrapper-grey-bg {
+  background-color: hsl(0deg 0% 95%);
+  padding: 2rem 20rem;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(257, 7%, 63%);
+  font-weight: 700;
+}
+
+a:hover {
+  color: var(--dark-violet);
+}
+
+.mobile-nav {
+  display: none;
+}
+
+/* I've placed responsive css in each component css instead of writing it all here */
+@media only screen and (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+  }
+
+  .card-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  a,
+  button {
+    color: #fff;
+    font-size: 18px;
+  }
+
+  #root {
+    width: 100%;
+  }
+
+  .wrapper-white-bg {
+    padding: 2rem 1rem;
+  }
+
+  .wrapper-grey-bg {
+    position: absolute;
+    padding: 2rem 1rem;
+    transform: translateY(20rem);
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  body {
+    margin: 0;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  nav {
+    padding: 0rem 10rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    padding: 2rem 0rem;
+  }
+
+  nav {
+    padding: 0;
+  }
+}
