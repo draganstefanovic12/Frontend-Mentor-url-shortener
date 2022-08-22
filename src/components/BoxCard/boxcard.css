@@ -12,7 +12,6 @@
   transform: translate(-0.5rem, -3.2rem);
   background-color: hsl(257, 27%, 26%);
   padding: 1rem;
-  height: 5rem;
   border-radius: 50%;
 }
 
@@ -39,6 +38,7 @@
   }
 
   .box {
+    width: 90%;
     text-align: center;
   }
 }
@@ -46,5 +46,9 @@
 @media only screen and (max-width: 1450px) {
   .box {
     text-align: center;
+  }
+
+  .box > p {
+    width: 100%;
   }
 }

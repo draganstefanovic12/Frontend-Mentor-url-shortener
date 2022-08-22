@@ -3,7 +3,7 @@ export type CardData = {
   paragraph: string;
 };
 
-export const cardData = [
+export const data = [
   {
     name: "Brand Recognition",
     paragraph:

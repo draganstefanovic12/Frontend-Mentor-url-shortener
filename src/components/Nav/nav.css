@@ -52,6 +52,11 @@ nav {
 
   .show-nav {
     display: flex;
+    z-index: 1;
+  }
+
+  .show-nav > button {
+    height: 3rem;
   }
 }
 
@@ -61,13 +66,7 @@ nav {
   }
 }
 
-@media only screen and (min-width: 501px) and (max-width: 768px) {
-  nav {
-    padding: 0 0rem;
-  }
-}
-
-@media only screen and (min-width: 1000px) and (max-width: 1300px) {
+@media only screen and (min-width: 769px) and (max-width: 1500px) {
   nav {
     padding: 0 0rem;
   }

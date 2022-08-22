@@ -28,7 +28,7 @@ export const Nav = () => {
       </div>
       <img
         onClick={handleMobileNav}
-        className="mobile-nav"
+        className="mobile-nav show-nav"
         src={mobileNav}
         alt="mob-nav"
       />

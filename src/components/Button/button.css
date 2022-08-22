@@ -29,6 +29,14 @@
   border-radius: 2rem;
 }
 
+.copied-btn {
+  background-color: hsl(257, 27%, 26%);
+}
+
+.copied-btn:hover {
+  background-color: hsl(257, 27%, 26%);
+}
+
 @media only screen and (max-width: 500px) {
   .header-btn {
     background-color: hsl(257, 27%, 26%);

@@ -1,5 +1,5 @@
 import "./advancedstatistics.css";
-import { CardData, cardData } from "../../assets/data/CardData";
+import { CardData, data } from "../../assets/data/cardData";
 import { BoxCard } from "../BoxCard/BoxCard";
 import brand from "../../assets/images/icon-brand-recognition.svg";
 import records from "../../assets/images/icon-detailed-records.svg";
@@ -19,8 +19,9 @@ export const AdvancedStatistic = () => {
       </div>
       <div className="card-wrapper">
         <span className="cyan-line"></span>
-        {cardData.map((card: CardData, index: number) => (
+        {data.map((card: CardData, index: number) => (
           <BoxCard
+            key={index}
             logo={cardLogos[index]}
             name={card.name}
             paragraph={card.paragraph}

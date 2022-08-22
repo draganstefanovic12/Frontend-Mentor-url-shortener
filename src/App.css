@@ -5,7 +5,7 @@
   box-sizing: border-box;
   font-family: var(--font-main);
   --font-main: "Poppins", sans-serif;
-  --primary-color: hsl(180, 66%, 49%);
+  --primary-color: #2acfcf;
   --dark-violet: hsl(257, 27%, 26%);
 }
 
@@ -25,7 +25,8 @@ h2 {
 }
 
 .wrapper-white-bg,
-.wrapper-grey-bg {
+.wrapper-grey-bg,
+.wrapper-footer {
   background-color: #fff;
   padding: 2rem 20rem;
 }
@@ -33,6 +34,34 @@ h2 {
 .wrapper-grey-bg {
   background-color: hsl(0deg 0% 95%);
   padding: 2rem 20rem;
+}
+
+.wrapper-boost-links-today {
+  display: flex;
+  justify-content: center;
+  background-image: url("./assets/images/bg-boost-desktop.svg");
+  padding: 3rem 0rem;
+  background-color: var(--dark-violet);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper-boost-links-today > div > h1 {
+  color: #cccccc;
+}
+
+.wrapper-boost-links-today > div {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+.wrapper-boost-links-today > div > button {
+  height: 3rem;
+}
+
+.wrapper-footer {
+  background-color: hsl(260, 8%, 14%);
 }
 
 a {
@@ -77,9 +106,34 @@ a:hover {
   }
 
   .wrapper-grey-bg {
-    position: absolute;
-    padding: 2rem 1rem;
-    transform: translateY(20rem);
+    position: relative;
+    padding: 2rem 0rem;
+    padding-bottom: 3rem;
+    width: 100%;
+    padding-top: 7rem;
+    transform: translateY(13.7rem);
+  }
+
+  .wrapper-boost-links-today {
+    position: relative;
+    transform: translate(0rem, 13.5rem);
+    width: 100%;
+    padding: 3rem 0rem;
+  }
+
+  .wrapper-boost-links-today > div > h1 {
+    font-size: 24px;
+  }
+
+  .wrapper-boost-links-today > div > button {
+    height: 2.5rem;
+  }
+
+  .wrapper-footer {
+    position: relative;
+    transform: translateY(13.5rem);
+    width: 100%;
+    padding: 3rem 0rem;
   }
 }
 
@@ -90,17 +144,19 @@ a:hover {
     width: 100%;
   }
 
-  nav {
-    padding: 0rem 10rem;
+  .wrapper-white-bg {
+    padding: 2rem 1rem;
   }
 }
 
-@media only screen and (max-width: 1000px) {
-  body {
-    padding: 2rem 0rem;
-  }
-
+@media only screen and (min-width: 1000px) {
   nav {
     padding: 0;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .wrapper-footer {
+    padding: 2em 40em;
   }
 }

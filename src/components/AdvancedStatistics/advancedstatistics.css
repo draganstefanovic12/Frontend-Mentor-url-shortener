@@ -1,7 +1,7 @@
 .adv-statistics {
   width: 100%;
-  margin-top: 3rem;
   margin-bottom: 5rem;
+  transform: translateY(-5rem);
 }
 
 .adv-text-wrapper {
@@ -29,7 +29,7 @@
 
 .cyan-line {
   position: absolute;
-  width: 50%;
+  width: 45rem;
   height: 0.9rem;
   background-color: hsl(180, 66%, 49%);
   transform: translateY(9rem);
@@ -60,6 +60,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .adv-statistics {
+    margin-top: 10rem;
+  }
+
   .adv-text-wrapper > h1 {
     font-size: 24px;
   }

@@ -1,0 +1,57 @@
+.footer {
+  display: flex;
+  gap: 4rem;
+}
+.logo {
+  margin: 0 auto;
+  height: 100%;
+  margin-right: 23rem;
+}
+
+.footer > div {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.footer > div > a:hover {
+  color: #fff;
+}
+
+.footer > div > p {
+  color: #fff;
+}
+
+.footer > div:nth-child(5) {
+  margin-left: 2rem;
+  gap: 1.5rem;
+  cursor: pointer;
+}
+
+.footer-flex-col {
+  flex-direction: column;
+}
+
+.footer-flex-col > p {
+  margin-top: 0rem;
+}
+
+@media only screen and (max-width: 1900px) {
+  .footer {
+    place-items: center;
+    flex-direction: column;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .footer > div {
+    width: 100%;
+    place-items: center;
+    justify-content: center;
+  }
+
+  .footer > div:nth-child(5) {
+    margin: 0;
+  }
+}
