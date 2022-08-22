@@ -1,4 +1,4 @@
-# Frontend-Mentor-url-shortener
+# Frontend-Mentor url shortener
 
 Another Frontend Mentor challenge. This was pretty fun to make. I'm utilizing local storage to save the shortened links even after the page is refreshed.
 
